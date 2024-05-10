@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kent Olortigue">
+    <meta name="description" content="Portafolio web">
+    <meta name="keywords"
+      content="html, sass, javascript, portafolio, kent olortigue, kent, kentolortigue, @kentolortigue">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./build/img/icon.png">
+    <title>Kent Olortigue</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./build/css/style.css" />
+    <!-- JS -->
+    <script src="./build/js/redes_trabajos.js" defer></script>
+    <script src="./build/js/main.js" defer></script>
+    <!-- poppins font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <!-- AWESOME ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body class="body over-hidden" id="body">
+    <!-- HEADER -->
+    <header class="header">
+      <!-- LOGO -->
+      <a href="https://kentolortigue.com/">
+        <h2 class="header__logo">kentolortigue</h2>
+      </a>
+      <!-- NAV -->
+      <nav class="header__nav">
+        <!-- ICONO SANDWICH -->
+        <i class="fa-solid fa-bars nav__icono" id="icono-nav"></i>
+        <!-- CAJA DE LINKS -->
+        <ul class="nav__caja" id="contenedor-nav">
+          <a href="#seccion-home" class="item-nav selected"><li>home</li></a>
+          <!-- <a href="#seccion-about" class="item-nav"><li>about</li></a> -->
+          <a href="#seccion-skills" class="item-nav"><li>tech stack</li></a>
+          <a href="#seccion-projects" class="item-nav"><li>projects</li></a>
+          <a href="#seccion-contact" class="item-nav"><li>connect</li></a>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main" id="main">
+      <!-- seccion 1 - HOME-->
+      <section class="seccion1" id="seccion-home">
+        <article class="cajas">
+          <div class="caja1">
+            <p class="titulo" id="titulo"></p>
+            <p class="cargo" id="cargo"></p>
+          </div>
+          <div class="caja2">
+            <a href="./build/img/CV.pdf" download target="_blank">
+              <button class="caja2__boton descargar-cv" id="boton-descargar-cv">
+                <span>Download CV</span>&nbsp;
+                <i class="bi bi-download"></i>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/kentolortigue/"
+              target="_blank">
+              <button class="caja2__boton contact-ws" id="boton-contact">
+                <span>Let's connect</span>&nbsp;
+                <i class="fa-brands fa-linkedin"></i>
+              </button>
+            </a>
+          </div>
+        </article>
+        <div class="seccion1__imagen"></div>
+        <div class="contenedor-redes">
+          <ul>
+            <li>
+              <a href="https://github.com/k3nt456" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kentolortigue/"
+                target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:kentolortigue@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- seccion 2 - SKILLS-->
+      <section class="seccion2" id="seccion-skills">
+        <div class="caja">
+          <div class="caja__contenido">
+            <label class="titulo-skills">Technological stack</label>
+            <p>
+              I love learning, these are the technologies I use depending on the
+              needs that arise in a project.
+            </p>
+          </div>
+          <div class="caja__iconos caja-skills">
+            <div class="contenedor-iconos">
+              <i class="fa-brands fa-html5" title="HTML"></i>
+              <i class="fa-brands fa-css3-alt" title="CSS"></i>
+              <i class="fa-brands fa-js" title="Javasript"></i>
+              <div class="icono-typescript" title="TypeScript"></div>
+              <i class="fa-brands fa-react" title="React"></i>
+              <i class="fa-brands fa-sass" title="Sass"></i>
+              <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+              <i class="fa-brands fa-laravel" title="Laravel"></i>
+              <i class="fa-brands fa-docker" title="Docker"></i>
+              <i class="fa-brands fa-cpanel" title="CPanel"></i>
+              <div class="icono-mdb" title="MongoDB"></div>
+              <div class="icono-mysql" title="MySQL"></div>
+              <i class="fa-brands fa-npm" title="npm"></i>
+              <i class="fa-brands fa-git" title="Git"></i>
+              <i class="fa-brands fa-github" title="GitHub"></i>
+              <i class="fa-brands fa-ubuntu" title="Ubuntu"></i>
+              <i class="fa-brands fa-jira" title="Jira"></i>
+              <i class="fa-brands fa-trello" title="Trello"></i>
+              <i class="bi bi-terminal" title="Terminal"></i>
+              <i class="fa-brands fa-markdown" title="Markdown"></i>
+              <i class="fa-brands fa-figma" title="Figma"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION 3 -->
+      <section class="seccion3" id="seccion-projects">
+        <!-- - PROYECTOS CSS/SASS -->
+        <div class="caja1">
+          <h2 class="titulo-projects">Projects CSS/SASS</h2>
+          <p class="subtitulo">In the following projects, the websites were made with pure CSS and SASS, use of mobile first and BEM.</p>
+        </div>
+
+        <div class="seccion3__contenedor" id="contenedor-proyectos-css">
+          <!-- ////////////////////////////////// -->
+          <template id="template-proyecto-css">
+            <article class="proyecto">
+              <div class="contenido">
+                <!-- contenedor datos -->
+                <div class="contenedor-datos">
+                  <span class="nombre"></span>
+
+                  <p class="descripcion"></p>
+                </div>
+                <!-- contenedor botones -->
+                <div class="contenedor-botones">
+                  <a href="#"
+                    target="_blank" class="link-websites">
+                    <button>
+                      Website&nbsp;&nbsp;
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </a>
+                  <a href="#"
+                    target="_blank" class="link-github">
+                    <button>
+                      Github&nbsp;&nbsp;
+                      <i class="fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                </div>
+                <!-- ------------------- -->
+              </div>
+            </article>
+          </template>
+        </div>
+        <!-- ////////////////////////////////// -->
+        <!-- - PROYECTOS PHP -->
+        <div class="caja1">
+          <h2 class="titulo-projects">Projects PHP</h2>
+          <p class="subtitulo">The projects were carried out with the Laravel framework as well as FULL REST API and MVC.</p>
+        </div>
+
+        <div class="seccion3__contenedor" id="contenedor-proyectos-php">
+          <!-- ////////////////////////////////// -->
+          <template id="template-proyecto-php">
+            <article class="proyecto">
+              <div class="contenido">
+                <!-- contenedor datos -->
+                <div class="contenedor-datos">
+                  <span class="nombre"></span>
+
+                  <p class="descripcion"></p>
+                </div>
+                <!-- contenedor botones -->
+                <div class="contenedor-botones">
+                  <a href="#"
+                    target="_blank" class="link-websites">
+                    <button>
+                      Website&nbsp;&nbsp;
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </a>
+                  <a href="#"
+                    target="_blank" class="link-github">
+                    <button>
+                      Github&nbsp;&nbsp;
+                      <i class="fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                </div>
+                <!-- ------------------- -->
+              </div>
+            </article>
+          </template>
+        </div>
+        <!-- ////////////////////////////////// -->
+        <!-- - PROYECTOS REACT -->
+        <div class="caja1">
+          <h2 class="titulo-projects">Projects REACT</h2>
+          <p class="subtitulo">Projects made with react js together with typescript. Soon more...</p>
+        </div>
+
+        <div class="seccion3__contenedor" id="contenedor-proyectos-react">
+          <!-- ////////////////////////////////// -->
+          <template id="template-proyecto-react">
+            <article class="proyecto">
+              <div class="contenido">
+                <!-- contenedor datos -->
+                <div class="contenedor-datos">
+                  <span class="nombre"></span>
+
+                  <p class="descripcion"></p>
+                </div>
+                <!-- contenedor botones -->
+                <div class="contenedor-botones">
+                  <a href="#"
+                    target="_blank" class="link-websites">
+                    <button>
+                      Website&nbsp;&nbsp;
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </a>
+                  <a href="#"
+                    target="_blank" class="link-github">
+                    <button>
+                      Github&nbsp;&nbsp;
+                      <i class="fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                </div>
+                <!-- ------------------- -->
+              </div>
+            </article>
+          </template>
+        </div>
+        <!-- ////////////////////////////////// -->
+        <div class="contenedor-more titulo-more-projects">
+          <a href="https://github.com/k3nt456" target="_blank">
+            <span>More projects&nbsp;&nbsp;</span>
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECCION 4 - CONTACT-->
+      <section class="seccion4" id="seccion-contact">
+        <!-- <h2>Contact</h2> -->
+        <div class="caja caja-contact">
+          <div class="contenido">
+            <p class="pregunta">Do you have a project or do you want to know me
+              more?<br>
+              <span class="frase">Let's talk</span></p>
+
+            <a href="https://www.linkedin.com/in/kentolortigue/"
+              target="_blank">
+              <button class="boton">
+                Let's connect&nbsp;&nbsp;
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="fondo"></div>
+              </button>
+            </a>
+
+            <a class="correo" href="mailto:kentolortigue@gmail.com"
+              target="_blank">kentolortigue@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="contenedor-redes">
+        <ul>
+          <li>
+            <a href="https://github.com/k3nt456" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kentolortigue/"
+              target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kentolortigue@gmail.com" target="_blank">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>Developed by <a href="https://github.com/kentolortigue"
+          target="_blank">Kent Olortigue</a> &#169 2024</p>
+    </footer>
+
+    <!-- PANTALLA DE CARGA -->
+    <div class="pantalla-de-carga" id="pantalla-de-carga">
+      <!-- SEGUNDA PANTALLA DE CARGA -->
+      <div class="loadingio-spinner-double-ring-1wm8naw1smp">
+        <div class="ldio-p5sjjoa9rhk">
+          <div></div>
+          <div></div>
+          <div><div></div></div>
+          <div><div></div></div>
+        </div></div>
+    </div>
+
+    <!-- FIN -->
+  </body>
+</html>
