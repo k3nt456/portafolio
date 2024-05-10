@@ -49,7 +49,7 @@ const TRABAJOSBACKPHP = [
     descripcion:
       "Website made with Laravel for API consumption focused on controlling and managing people in a gym.",
     website: "#",
-    github: "https://github.com/k3nt456/app-alegra",
+    github: "https://github.com/k3nt456/good_practices",
     imagen: "./build/img/proyectos/PHP/fit.webp",
   },
   {
