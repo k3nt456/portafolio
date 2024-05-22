@@ -10,12 +10,12 @@ const REDES_SOCIALES = {
 
 const TRABAJOSFRONTCSSPURO_SASS = [
   {
-    nombre: "Cafetería Barranca",
+    nombre: "Delivery App",
     descripcion:
-      "Cafeteria project with elegant design and optimized functionality, developed in HTML, CSS, Sass, and Gulp.",
-    website: "https://cafeteria-bca.netlify.app/",
-    github: "https://github.com/k3nt456/cafeteria",
-    imagen: "./build/img/proyectos/css/Cafeteria.avif",
+      "Presentation of new food delivery application",
+    website: "https://appcomida-bca.netlify.app/",
+    github: "https://github.com/k3nt456/deliveryapp",
+    imagen: "./build/img/proyectos/css/DeliveryApp.avif",
   },
   {
     nombre: "Portafolio",
@@ -24,15 +24,15 @@ const TRABAJOSFRONTCSSPURO_SASS = [
     website: "https://portafolio-kent.netlify.app/",
     github: "https://github.com/k3nt456/portafolio",
     imagen: "./build/img/proyectos/css/Portafolio.avif",
-  }/* ,
+  },
   {
-    nombre: "Manage Movies List app",
+    nombre: "Cafeteria Barranca",
     descripcion:
-      "Application to save movie lists, you can edit them, move them, delete them, search them, etc.",
-    website: "#",
-    github: "#",
+      "Cafeteria project with elegant design and optimized functionality, developed in HTML, CSS, Sass, and Gulp.",
+    website: "https://cafeteria-bca.netlify.app/",
+    github: "https://github.com/k3nt456/cafeteria",
     imagen: "./build/img/proyectos/css/Cafeteria.avif",
-  }, */
+  },
 ];
 
 const TRABAJOSBACKPHP = [
