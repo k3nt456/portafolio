@@ -64,9 +64,9 @@ const TRABAJOSBACKPHP = [
 
 const TRABAJOSREACT = [
   {
-    nombre: "To-Do List App with TypeScript",
+    nombre: "To-Do List",
     descripcion:
-      "Basic todolist website in react.",
+      "Basic todolist website in react with TypeScript.",
     website: "https://todolist-bca.netlify.app/",
     github: "https://github.com/k3nt456/todolist",
     imagen: "./build/img/proyectos/REACT/todolist.avif",
