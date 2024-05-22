@@ -52,7 +52,6 @@
     .proyecto {
       width: 100%;
       height: 30rem;
-      // background: url('../assets/proyectos/ecommerce.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -62,14 +61,6 @@
       min-height: 39rem;
 
       .contenido {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
-        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6));
-
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-        background: linear-gradient(
-          rgba(0, 0, 0, 0.85),
-          rgba(0, 0, 0, 0.6)
-        ); /* PROV */
         background: linear-gradient(
           rgba(0, 0, 0, 0.85),
           rgba(0, 0, 0, 0.5)
@@ -82,13 +73,15 @@
         flex-direction: column;
         align-items: center;
         position: relative;
+        border: .2rem solid colores.$azul-1;
+        border-radius: 1rem;
 
-        padding: 2rem;
+        padding: 3rem;
         gap: 3rem;
 
         transform: translateY(-100%);
 
-        transition: 0.6s;
+        transition: 0.5s;
 
         .contenedor-datos {
           width: 100%;
