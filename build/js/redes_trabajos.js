@@ -40,7 +40,7 @@ const TRABAJOSBACKPHP = [
     nombre: "Restaurante aleatoridad",
     descripcion:
       "Web developed with Laravel such as MVC, unit tests, docker, database modeling for presentation of a technical test.\n User:kento\nPassword:demo",
-    website: "https://alegra-app.000webhostapp.com/",
+    website: "https://kitchen-ramdon.000webhostapp.com/",
     github: "https://github.com/k3nt456/app-alegra",
     imagen: "./build/img/proyectos/PHP/Restaurante_aleatoriedad.avif",
   },
@@ -57,7 +57,7 @@ const TRABAJOSBACKPHP = [
     descripcion:
       "Web made with Laravel as a microservice and consumption on the web with html, css and javascript.",
     website: "#",
-    github: "https://github.com/k3nt456/app-alegra",
+    github: "https://github.com/k3nt456/creasoft",
     imagen: "./build/img/proyectos/PHP/oferta.avif",
   }
 ];

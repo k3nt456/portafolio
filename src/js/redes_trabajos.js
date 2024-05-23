@@ -57,7 +57,7 @@ const TRABAJOSBACKPHP = [
     descripcion:
       "Web made with Laravel as a microservice and consumption on the web with html, css and javascript.",
     website: "#",
-    github: "https://github.com/k3nt456/app-alegra",
+    github: "https://github.com/k3nt456/creasoft",
     imagen: "./build/img/proyectos/PHP/oferta.avif",
   }
 ];
