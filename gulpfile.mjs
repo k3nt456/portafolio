@@ -69,10 +69,13 @@ function dev() {
   watch("src/assets/**/*", imagenes);
 }
 
-// versionAvif queda fuera del build de CI: correrla localmente cuando se
-// agreguen imágenes nuevas (npx gulp versionAvif) y commitear el resultado,
-// igual que con el CV.
 const build = series(imagenes, versionWebp, css, js);
+
+// ci corre en Netlify: solo css/js, ambos JS puro sin binarios nativos.
+// imagenes/versionWebp/versionAvif dependen de binarios (optipng, cwebp,
+// sharp) que fallan en el entorno Linux/pnpm de Netlify — se corren
+// localmente y su resultado se commitea, igual que el CV.
+const ci = series(css, js);
 
 export {
   css as css,
@@ -82,6 +85,7 @@ export {
   versionWebp as versionWebp,
   versionAvif as versionAvif,
   build as build,
+  ci as ci,
 };
 
 export default series(build, dev);
