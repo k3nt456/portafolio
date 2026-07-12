@@ -62,6 +62,8 @@ function dev() {
   watch("src/assets/**/*", imagenes);
 }
 
+const build = series(imagenes, versionWebp, versionAvif, css, js);
+
 export {
   css as css,
   js as js,
@@ -69,9 +71,10 @@ export {
   imagenes as imagenes,
   versionWebp as versionWebp,
   versionAvif as versionAvif,
+  build as build,
 };
 
-export default series(imagenes, versionWebp, versionAvif, css, js, dev);
+export default series(build, dev);
 
 // series - Se inicia una tarea, y hasta que finaliza, inicia la siguiente
 // parallel - Todas inician al mismo tiempo
