@@ -12,7 +12,9 @@ import cssnano from "cssnano";
 // Dependencias de imágenes.
 import imagemin from "gulp-imagemin";
 import webp from "gulp-webp";
-import avif from "gulp-avif";
+// gulp-avif se importa de forma diferida (ver versionAvif): depende del
+// binario nativo de sharp, que no siempre está disponible en el entorno
+// de build de Netlify, y no forma parte del build de producción.
 
 function css(done) {
   // Compilar SASS.
@@ -47,13 +49,18 @@ function versionWebp() {
     .pipe(dest("build/img"));
 }
 
-function versionAvif() {
+async function versionAvif() {
+  const { default: avif } = await import("gulp-avif");
   const opciones = {
     quality: 50,
   };
-  return src("src/assets/**/*.{png,jpg}")
-    .pipe(avif(opciones))
-    .pipe(dest("build/img"));
+  return new Promise((resolve, reject) => {
+    src("src/assets/**/*.{png,jpg}")
+      .pipe(avif(opciones))
+      .pipe(dest("build/img"))
+      .on("end", resolve)
+      .on("error", reject);
+  });
 }
 
 function dev() {
@@ -62,7 +69,10 @@ function dev() {
   watch("src/assets/**/*", imagenes);
 }
 
-const build = series(imagenes, versionWebp, versionAvif, css, js);
+// versionAvif queda fuera del build de CI: correrla localmente cuando se
+// agreguen imágenes nuevas (npx gulp versionAvif) y commitear el resultado,
+// igual que con el CV.
+const build = series(imagenes, versionWebp, css, js);
 
 export {
   css as css,
